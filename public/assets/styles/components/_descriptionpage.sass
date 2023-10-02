@@ -1,0 +1,59 @@
+.content-description
+	display: grid
+	gap: 100px
+	grid-template-columns: 2fr 1fr
+	padding: $space-32
+	@include responsive(768px)
+		padding: $space-16
+		display: block
+	p
+		margin: 0em
+	.img-content
+		height: auto
+		margin: 0em auto
+		max-width: 400px
+		width: $image-size-100-p
+	.img-content img
+		height: auto
+		max-width: 400px
+		width: $image-size-100-p
+		@include responsive(768px)
+			margin-bottom: 1em
+	.buy-content
+		padding-right: $space-32
+		.count-buy-item
+			color: $color-black
+			font-size: $font-size-14
+			
+
+		.name-item
+			font-size: $font-size-24
+			font-weight: bold
+			padding-top: $space-16
+			padding-bottom: $space-32
+
+		.price-item
+			font-size: $font-size-46
+			font-weight: bold
+			padding-bottom: $space-32
+			@include responsive(768px)
+				font-size: 39px
+
+	.description-content
+		.title-item
+			color: $color-black
+			font-size: $font-size-28
+			font-weight: bold
+			padding-bottom: $space-32
+		.description-item
+			color: $color-gray
+			font-size: $font-size-16
+			padding-bottom: $space-32
+
+	.primary-button
+		background-color: $color-blue
+		border: 0px solid
+		border-radius: 3px
+		color: $color-white
+		padding: .5em 4em
+		width: 100%

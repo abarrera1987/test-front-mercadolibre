@@ -1,0 +1,49 @@
+.card-item
+	// margin: 0em auto
+	width: 100%
+	display: grid
+	gap: 1px
+	grid-template-columns: 1fr 4fr
+	align-items: center
+	@include responsive(768px)
+		display: block
+
+	.img-content
+		margin: 16px
+		height: $image-size-180
+		width: $image-size-180
+		align-items: center
+		text-align: center
+		@include responsive(768px)
+			margin-bottom: 1em
+			width: $image-size-100-p
+
+		.img-item
+			border-radius: 4px
+			height: $image-size-180
+			width: $image-size-180
+
+	.info-content
+		height: $image-size-180
+		@include responsive(768px)
+			height: auto
+		.price-item
+			font-size: $font-size-24
+
+		.description-item
+			font-size: $font-size-18
+			margin-top: $space-32
+
+	.city-content
+		height: $image-size-180
+		text-align: right
+		padding: $space-16
+		@include responsive(768px)
+			height: auto
+			text-align: left
+			padding: 0px
+		.city-item
+			color: $color-gray
+			font-size: $font-size-12
+
+
